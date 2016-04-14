@@ -1,0 +1,35 @@
+q_ql_ass_bs:
+    type: radio
+    question:
+        en: We consider current business situation as ... 
+        de: Wir beurteilen unsere aktuelle Geschäftslage als ...
+        it: Riteniamo la situazione attuale dei nostri affari
+    answers:
+        en:
+            - good
+            - medium
+            - ugly
+        de: 
+            - gut
+            - mittel 
+            - schlecht
+        it: 
+            - positiva
+            - neutra
+            - negativa
+            - nessuna risposta
+
+q_ql_ass_empl:
+    type: radio
+    question: 
+        en: We consider our staff count as ... 
+        de: Wir beurteilen unsere aktuelle Beschäftigtenzahl als ... 
+    answers: 
+        en: 
+            - short
+            - about right
+            - long
+        de: 
+            - zu gering
+            - genau richtig
+            - zu gross
