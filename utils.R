@@ -62,6 +62,34 @@ createYamlSkeleton <- function(question_id_list,lang){
 }
 
 
+storeSurveyDefintionAsJson <- function(survey_definition_list,
+                                       fname = "sd.json",
+                                       pretty = T){
+  sd <- parseSurveyDefintion(survey_definition_list)
+  sd_json <- jsonlite::toJSON(sd, pretty = pretty)
+  
+  fc <- file(fname)
+  writeLines(sd_json,fc)
+  close(fc)
+  
+  sprintf("survey definition written to JSON file %s.",
+          fname)
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
