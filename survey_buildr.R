@@ -7,6 +7,8 @@ lng <- a[1]
 yaml_def <- yaml.load_file(a[2])
 output_file <- a[3]
 
+yaml_def <- yaml.load_file("skeleton.yaml")
+
 
 ####################################
 # Function CALLS ###################

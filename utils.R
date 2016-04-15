@@ -50,3 +50,20 @@ writeHtmlOutput <- function(yaml,lang,fname){
           lang,fname)
   
 }
+
+
+
+createYamlSkeleton <- function(question_id_list,lang){
+  lng <- paste(sprintf("        %s: \n",lang),collapse="")
+  lapply(names(question_id_list),function(x){
+    sprintf("%s: \n    type: %s \n    question:\n%s    answers:\n%s",
+            x,question_id_list[[x]],lng,lng)
+  })
+}
+
+
+
+
+
+
+
