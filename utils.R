@@ -27,6 +27,24 @@ parseAnswers.radio <- function(q,lang){
   tagList(input_list)
 }
 
+parseAnswers.checkbox <- function(q,lang){
+  input_list <- list()
+  ans <- q[["answers"]][[lang]]
+  for (i in 1:length(ans)){
+    input_list[[i]] <- tags$div(class="checkbox",
+                                tags$label(
+                                  tags$input(type = "checkbox", name = "test",
+                                             value = i),
+                                  ans[i]
+                                ))
+  }
+  tagList(input_list)
+}
+
+
+
+
+
 writeHtmlOutput <- function(yaml,lang,fname){
   survey_def <- parseSurveyDefintion(yaml)
   

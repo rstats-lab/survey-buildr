@@ -4,7 +4,8 @@ library(jsonlite)
 source("utils.R")
 
 li <- list(q_ql_ass_bs = "radio",
-           q_ql_exp_emp = "radio")
+           q_ql_exp_emp = "radio",
+           q_cb_fin_restr = "checkbox")
 
 l <- c("de","en","it","fr")
 
@@ -21,7 +22,7 @@ close(fileCon)
 
 # yaml to json
 
-yaml_def <- yaml.load_file("example_r.yaml")
+yaml_def <- yaml.load_file("skeleton.yaml")
 
 
 storeSurveyDefintionAsJson(yaml_def)

@@ -7,7 +7,8 @@ Generate Online Surveys with R
 - create .sql table structure to save survey defintion
 - server side form
 - shiny demo (results to single json files)
-- implement checkbox questions
+- can we make yaml working when parts are missing??
+- encoding
 - implement text area
 - implement numeric input fields
 - fix bug with radio names

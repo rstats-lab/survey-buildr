@@ -20,7 +20,7 @@ q_ql_ass_bs:
             - nessuna risposta
 
 q_ql_ass_empl:
-    type: radio
+    type: checkbox
     question: 
         en: We consider our staff count as ... 
         de: Wir beurteilen unsere aktuelle Beschäftigtenzahl als ... 

@@ -8,7 +8,7 @@ yaml_def <- yaml.load_file(a[2])
 output_file <- a[3]
 
 # yaml_def <- yaml.load_file("example_r.yaml")
-# lng <- "en"
+# lng <- "de"
 # output_file <- "test.html"
 
 ####################################
