@@ -42,6 +42,16 @@ parseAnswers.checkbox <- function(q,lang){
 }
 
 
+parseAnswers.text <- function(q,lang){
+  input_list <- tags$div(class="text",
+                                tags$label(
+                                  tags$input(type = "text",
+                                             name = "test")
+                                ))
+  tagList(input_list)
+}
+
+
 
 
 
@@ -73,9 +83,16 @@ writeHtmlOutput <- function(yaml,lang,fname){
 
 createYamlSkeleton <- function(question_id_list,lang){
   lng <- paste(sprintf("        %s: \n",lang),collapse="")
+  lng_a <- paste(sprintf("        %s: \n            -\n            -\n",lang),
+                 collapse="")
   lapply(names(question_id_list),function(x){
-    sprintf("%s: \n    type: %s \n    question:\n%s    answers:\n%s",
-            x,question_id_list[[x]],lng,lng)
+    if(question_id_list[[x]] == "text"){
+      sprintf("%s: \n    type: %s \n    question:\n%s",
+              x,question_id_list[[x]],lng)  
+    } else {
+      sprintf("%s: \n    type: %s \n    question:\n%s    answers:\n%s",
+              x,question_id_list[[x]],lng,lng_a)  
+    }
   })
 }
 

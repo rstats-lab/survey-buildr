@@ -1,39 +1,45 @@
 q_ql_ass_bs: 
     type: radio 
-    question: 
-        de: Muuuu
-        en: 
-        it: 
-        fr: 
+    question:
+        de: deutsch
+        en: englisch
     answers:
         de: 
+            - a1
+            - a2
         en: 
-        it: 
-        fr: 
+            - a1
+            - a2
 
 q_ql_exp_emp: 
     type: radio 
-    question: 
-        de: maaaaaa
-        en: 
-        it: 
-        fr: 
+    question:
+        de: deutsch
+        en: englisch
     answers:
         de: 
+            - a1
+            - a2
         en: 
-        it: 
-        fr: 
+            - a1
+            - a2
 
 q_cb_fin_restr: 
     type: checkbox 
-    question: 
-        de: cb question
-        en: 
-        it: 
-        fr: 
+    question:
+        de: deutsch
+        en: englisch
     answers:
         de: 
+            - a1
+            - a2
         en: 
-        it: 
-        fr: 
+            - a1
+            - a2
+
+q_qn_test: 
+    type: text 
+    question: 
+        de: textfrage
+        en: text question
 
